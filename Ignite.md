@@ -28,3 +28,9 @@ Dessa maneira o nosso Back-end serve tanto para Desenvolvimento Web como para De
    - `"module": "CommonJS"`
    - `"rootDir": "./src"`
    - `"outDir": "./build"`
+
+# Iniciando um projeto React Native
+
+Para inicializar o projeto React Native utilize a **expo-CLI** para rodar o comando: `expo init NomeDoProjeto`.
+
+Com o **Expo GO** instalado no celular podemos rodar o comando: `expo start` para rodar nosso projeto no celular (Precisa estar conectado na mesma rede).
