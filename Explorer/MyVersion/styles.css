@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+
+:root {
+  --titles: #ffffff;
+  --text: #a1a1aa;
+  --cardColor: #2a263a;
+
+  --webkit-font-smoothing: antialiased;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter";
+}
+
+html,
+body {
+  width: 100vw;
+
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+
+  background-image: url(./assets/background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 160%;
+  letter-spacing: -0.047rem;
+  color: var(--titles);
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.018rem;
+  color: var(--text);
+
+  margin-bottom: 2.4rem;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  margin: 0 auto;
+
+  height: 12rem;
+  width: 12rem;
+
+  margin-block: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(to right, #9572fc, #43e7ad, #e2d45c);
+  border-radius: 50%;
+}
+
+.profile-picture img {
+  height: 11.2rem;
+  width: 11.2rem;
+
+  border-radius: 50%;
+}
+
+.card {
+  width: 58rem;
+  height: 26.4rem;
+
+  padding: 2.4rem 3.2rem 3.2rem;
+
+  margin-bottom: 2.4rem;
+
+  background-color: var(--cardColor);
+  border-radius: 8px;
+
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  width: 58rem;
+  height: 26.4rem;
+
+  border-radius: 8px;
+  background: linear-gradient(to right, #9572fc, #43e7ad, #e2d45c);
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  z-index: -1;
+}
+
+.card:nth-child(2) {
+  height: 21.4rem;
+}
+
+.card:nth-child(2)::after {
+  height: 21.4rem;
+}
+
+.card:nth-child(3) {
+  height: 17.6rem;
+}
+
+.card:nth-child(3)::after {
+  height: 17.6rem;
+}
+
+ul.games,
+ul.streamers,
+ul.social {
+  display: flex;
+  gap: 1.6rem;
+}
+
+ul.games li img {
+  width: 9rem;
+  height: 12rem;
+
+  border-radius: 8px;
+}
+
+ul.streamers img {
+  border-radius: 50%;
+}

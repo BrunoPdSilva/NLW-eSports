@@ -29,7 +29,7 @@ Dessa maneira o nosso Back-end serve tanto para Desenvolvimento Web como para De
    - `"rootDir": "./src"`
    - `"outDir": "./build"`
 
-# Iniciando um projeto React Native
+## Iniciando um projeto React Native
 
 Para inicializar o projeto React Native utilize a **expo-CLI** para rodar o comando: `expo init NomeDoProjeto`.
 
