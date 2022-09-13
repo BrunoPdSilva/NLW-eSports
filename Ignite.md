@@ -25,9 +25,13 @@ Dessa maneira o nosso Back-end serve tanto para Desenvolvimento Web como para De
    - Testar API usando Insonmia ou Postman.
 
 2. Inicializar **TypeScript**.
+
    - `"module": "CommonJS"`
    - `"rootDir": "./src"`
    - `"outDir": "./build"`
+
+3. Adicionar TailwindCSS no projeto.
+   - Adicionar uma imagem como background
 
 ## Iniciando um projeto React Native
 
