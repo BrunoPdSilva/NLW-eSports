@@ -15,56 +15,43 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  line-height: 160%;
 }
 
 html,
 body {
   width: 100vw;
-
   overflow-x: hidden;
 }
 
 body {
-  height: 100%;
-
-  background-image: url(./assets/background.svg);
-  background-position: center;
+  background-image: url(./assets/bg.jpg);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
+  background-color: #121214;
 }
 
 main {
-  height: 100%;
-  width: 100%;
+  max-width: 58rem;
+  width: 90%;
+
+  margin: auto;
 }
 
 h2 {
   font-size: 2.4rem;
-  font-weight: 900;
-  line-height: 160%;
   letter-spacing: -0.047rem;
   color: var(--titles);
 }
 
 p {
   font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 160%;
   letter-spacing: -0.018rem;
   color: var(--text);
 
   margin-bottom: 2.4rem;
-}
-
-li {
-  list-style: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .profile-picture {
@@ -91,8 +78,7 @@ main {
 }
 
 .card {
-  width: 58rem;
-  height: 26.4rem;
+  width: 100%;
 
   padding: 2.4rem 3.2rem 3.2rem;
 
@@ -106,10 +92,10 @@ main {
 
 .card::after {
   content: "";
-  width: 58rem;
+  width: 100%;
   height: 26.4rem;
 
-  border-radius: 8px;
+  border-radius: 13px;
   background: linear-gradient(to right, #9572fc, #43e7ad, #e2d45c);
   position: absolute;
   top: -4px;
@@ -122,23 +108,24 @@ main {
   height: 21.4rem;
 }
 
-.card:nth-child(2)::after {
-  height: 21.4rem;
-}
-
 .card:nth-child(3) {
   height: 17.6rem;
 }
 
-.card:nth-child(3)::after {
-  height: 17.6rem;
+.card:nth-child(2)::after {
+  height: 100%;
 }
 
-ul.games,
-ul.streamers,
-ul.social {
+.card:nth-child(3)::after {
+  height: 100%
+}
+
+ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.6rem;
+
+  list-style: none;
 }
 
 ul.games li img {
