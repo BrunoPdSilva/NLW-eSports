@@ -173,6 +173,8 @@ ul.streamers img {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-inline: 0;
   }
   ul {
     justify-content: center;
