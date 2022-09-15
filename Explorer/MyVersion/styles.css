@@ -68,6 +68,14 @@ p {
 
   background: linear-gradient(to right, #9572fc, #43e7ad, #e2d45c);
   border-radius: 50%;
+
+  transition: 0.4s;
+  animation: toTop .5s .4s backwards;
+
+}
+
+.profile-picture:hover {
+  transform: scale(1.05);
 }
 
 .profile-picture img {
@@ -77,47 +85,32 @@ p {
   border-radius: 50%;
 }
 
+section {
+  color: white;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding-top: 4px;
+  border-radius: 10px;
+
+  animation: toRight .5s .5s backwards;
+}
+
+section:nth-child(2) {
+  animation: toRight .5s .6s backwards;
+}
+
+section:nth-child(3) {
+  animation: toRight .5s .7s backwards;
+}
+
 .card {
   width: 100%;
 
+  background-color: var(--cardColor); 
   padding: 2.4rem 3.2rem 3.2rem;
 
   margin-bottom: 2.4rem;
 
-  background-color: var(--cardColor);
   border-radius: 8px;
-
-  position: relative;
-}
-
-.card::after {
-  content: "";
-  width: 100%;
-  height: 26.4rem;
-
-  border-radius: 13px;
-  background: linear-gradient(to right, #9572fc, #43e7ad, #e2d45c);
-  position: absolute;
-  top: -4px;
-  left: 0;
-
-  z-index: -1;
-}
-
-.card:nth-child(2) {
-  height: 21.4rem;
-}
-
-.card:nth-child(3) {
-  height: 17.6rem;
-}
-
-.card:nth-child(2)::after {
-  height: 100%;
-}
-
-.card:nth-child(3)::after {
-  height: 100%
 }
 
 ul {
@@ -126,6 +119,14 @@ ul {
   gap: 1.6rem;
 
   list-style: none;
+}
+
+li {
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.05);
 }
 
 ul.games li img {
@@ -137,4 +138,43 @@ ul.games li img {
 
 ul.streamers img {
   border-radius: 50%;
+
+  border: 1px solid #443E54;
+}
+
+/* Animações */
+
+@keyframes toTop {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    justify-content: center;
+  }
 }
