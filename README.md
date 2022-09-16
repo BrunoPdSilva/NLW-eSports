@@ -25,6 +25,7 @@ Projetos construidos no evento Next Level Week (NLW) da Rocketseat.
 - TypeScript
 - Tailwind CSS
 - SQLite
+- Prisma
 
 ---
 ## ✉️ Contato
