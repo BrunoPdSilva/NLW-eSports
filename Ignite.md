@@ -33,8 +33,34 @@ Dessa maneira o nosso Back-end serve tanto para Desenvolvimento Web como para De
 3. Adicionar TailwindCSS no projeto.
    - Adicionar uma imagem como background
 
+4. Criar rotas Express **'/games'** **'/ads'**
+
+5. Instalar Prisma e criar o banco de dados.
+ `npm i prisma -D`
+ `npx prisma init -h` Mostra a documentação do comando que iremos executar.
+ `npx prisma init --datasource-provider SQLite`
+
+ `npx prims migrate dev`
+
+6. GameBanner Component
+
+7. Buscar dados do back-end e renderizar os cards.
+
+8. Radix UI
+   - **Radix Dialog**
+
 ## Iniciando um projeto React Native
 
 Para inicializar o projeto React Native utilize a **expo-CLI** para rodar o comando: `expo init NomeDoProjeto`.
 
 Com o **Expo GO** instalado no celular podemos rodar o comando: `expo start` para rodar nosso projeto no celular (Precisa estar conectado na mesma rede).
+
+# Back-end
+- sqlite3
+
+## Entidades
+
+### Game
+- id
+- title
+- bannerUrl 
